@@ -12,13 +12,18 @@ Algorithm:
 7.	Use the display function to visualize the stack's contents
  
 Program:
-
-//type your code here
-
+```
+float stack[100];
+int top,i;
+void display()
+{ for(i=top;i>=0;i--){
+    printf("%.1f\n",stack[i]);
+}
+}
+```
 Output:
 
-//paste your output here
-
+![image](https://github.com/user-attachments/assets/21a429f6-0ada-40f7-9123-31b4ac313338)
 
 
 Result:
@@ -35,14 +40,21 @@ Algorithm:
 4.	Call the push function as needed.
  
 Program:
-
-//type your code here
+```
+int size=3,top=-1,stack[100];
+void push (int data)
+{
+    if(top==size-1){
+        printf("stack is full\n");
+    }
+    else
+    top++;
+    stack[top]=data;
+}
+```
 
 Output:
-
-//paste your output here
-
-
+![image](https://github.com/user-attachments/assets/4943b0b1-e0e9-4674-8b11-25b2e070781d)
 
 
 Result:
@@ -61,13 +73,22 @@ Algorithm:
 4.	Call the display function and perform other queue operations as needed.
  
 Program:
-
-//type your code here
+```
+int queue[50], rear=-1, front=-1;
+void display()
+{
+    if(front>rear||front==-1)
+    printf("No elements to display");
+    else
+    for(int i=front;i<=rear;i++){
+        printf("%d\n",queue[i]);
+    }
+}
+```
 
 Output:
 
-//paste your output here
-
+![image](https://github.com/user-attachments/assets/5fa74779-8380-4d79-b11a-dd04189388f5)
 
 Result:
 Thus, the program to display queue elements using array is verified successfully.
@@ -85,12 +106,23 @@ Algorithm:
 4.	Call the enqueue function as needed.
 
 Program:
-
-//type your code here
+```
+int queue[50],size=10,front=-1,rear=-1;
+void enqueue(int data)
+{
+    if(rear<size){
+        if(front==-1)
+        front=0;
+    }
+    rear++;
+    queue[rear]=data;
+}
+```
 
 Output:
+![image](https://github.com/user-attachments/assets/4e293dc1-bc8a-432d-99ff-3c9833f43d25)
 
-//paste your output here
+
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
@@ -120,12 +152,19 @@ o	After deletion, check if the front pointer has passed the rear pointer (front 
 
 
 Program:
-
-//type your code here
+```
+int front, rear;
+void dequeue()
+{  if(front>rear||front==-1)
+printf("Queue Underflow.\n");
+else
+    front++;
+}
+```
 
 Output:
+![image](https://github.com/user-attachments/assets/c3eb722b-db54-4af4-a7a8-6059b10916ea)
 
-//paste your output here
 
 
 Result:
