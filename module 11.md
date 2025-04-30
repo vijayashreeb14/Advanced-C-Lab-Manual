@@ -43,6 +43,8 @@ int main()
 ```
 
 Output:
+
+
 ![image](https://github.com/user-attachments/assets/80184a43-ec5a-42e9-bbfb-a49835b788ae)
 
 
@@ -65,6 +67,8 @@ Algorithm:
 7.	Call the calculate_the_max function with input values.
  
 Program:
+
+
 ```
 #include<stdio.h>
 void calculate_the_max(int n,int k)
@@ -97,7 +101,10 @@ int main()
     calculate_the_max(n,k);
 }
 ```
+
 Output:
+
+
 ![image](https://github.com/user-attachments/assets/d7fb21ed-4a2a-4bf6-8d0e-48d61aa6f49b)
 
 
@@ -119,6 +126,7 @@ Algorithm:
 5.	Use a for loop to iterate over the queries.
  
 Program:
+
 ```
 #include<stdio.h> 
 int main()
@@ -155,6 +163,8 @@ int main()
     }
 }
 ~~~
+
+
 Output:
 
 ![image](https://github.com/user-attachments/assets/6f338f3d-9475-4c79-a469-878f3be94d7a)
@@ -180,6 +190,7 @@ Algorithm:
 
 
 Program:
+
 ```
 #include<stdio.h>
 int main()
@@ -196,6 +207,8 @@ int main()
     printf("%d",sum);
 }
 ```
+
+
 Output:
 
 ![image](https://github.com/user-attachments/assets/abf242b8-b4d0-4bf0-94c0-90f16b029ba8)
@@ -227,6 +240,7 @@ o	If a character is not a space, it may belong to a word. If it's the first non-
 
 
 Program:
+
 ```
 #include<stdio.h>
 #include<string.h>
